@@ -40,6 +40,8 @@ Can run the tests from IDE or using Jenkins pipeline, have Unit test as well as 
 ## User interface
 
 ![picture](/spotbooking.PNG)
+![picture](/lotmgmt.PNG)
+![picture](/eviction.PNG)
 ## Authors
 
 Venkat Vallabhaneni
