@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <h2 style="text-align: center;">PERCHED PARKING SOLUTIONS</h2>
+</nav>
+<div class="container">
+  <br>
+
+
+  <div >
+    
+
+    <div style="width: 150px; float:left; height:100px; background:lightgrey; margin:10px">
+        <a routerLink="parkingLots" class="nav-link" routerLinkActive="active">Parking Lots</a>
+       
+      </div>
+
+      <div style="width: 150px; float:left; height:100px; background:lightgrey; margin:10px">
+          <a routerLink="parkingSpots" class="nav-link" routerLinkActive="active">Parking Spots</a>
+         
+        </div>
+
+        <div style="width: 150px; float:left; height:100px; background:lightgrey; margin:10px">
+            <a routerLink="vacateParkingSpots" class="nav-link" routerLinkActive="active">Vacate Parking Spot</a>
+           
+          </div>
+          <div style="width: 150px; float:left; height:100px; background:lightgrey; margin:10px">
+              <a routerLink="records" class="nav-link" routerLinkActive="active">Parking Records</a>
+             
+            </div>
+</div>
+<div style="float:left;">
+<div class="card">
+    <div class="card-body">
+        <router-outlet></router-outlet>
+    </div>
+    
+</div>
+</div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <span>All Rights Reserved 2019 @JavaGuides</span>
+    </div>
+  </footer>

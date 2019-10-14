@@ -1,0 +1,45 @@
+<div class="panel panel-primary"></div>
+  <div class="panel-heading">
+    <h2>Parking Spots Availability @ Parking Lot </h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Spot ID</th>
+          <th>Spot Type</th>
+          <th>Parking Lot Id</th>
+          <th>Price Per Hour (INR)</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+
+         
+         
+
+        <tr *ngFor="let parkingspot of parkingSpots">
+          <td>{{parkingspot.parkingSpotId}}</td>
+          <td>{{parkingspot.parkingSpotType}}</td>
+          <td>{{parkingspot.parkingLotId}}</td>
+          <td>{{parkingspot.price}}</td>
+
+
+          <div *ngIf="parkingspot.occupied else show">
+            <td><button class="btn btn-info" disabled>Book</button>
+
+            </td>
+          </div>
+          <div>
+            <ng-template #show>
+              <td><button (click)="bookingForm(parkingspot.parkingLotId )" class="btn btn-success">Book</button>
+
+              </td>
+            </ng-template>
+          </div>
+
+        </tr>
+      </tbody>
+    </table>
+
+</div>

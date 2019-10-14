@@ -1,0 +1,45 @@
+<h3>Create Booking</h3>
+<div [hidden]="submitted" style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Full Name of the Vehicle Owner</label>
+            <input type="text" class="form-control" id="ownerName" required [(ngModel)]="bookingQuery.ownerName"
+                name="ownerName">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Vehicle Registration Number</label>
+            <input type="text" class="form-control" id="vehicleNumber" required [(ngModel)]="bookingQuery.vehicleNumber"
+                name="vehicleNumber">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Vehicle weight</label>
+            <input type="text" class="form-control" id="vehicleWeight" required [(ngModel)]="bookingQuery.vehicleWeight"
+                name="vehicleWeight">
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="name">Vehicle Type</label>
+
+            <select matNativeControl required [(ngModel)]="bookingQuery.vehicleType" name="vehicleType">
+                <option value="BUS">BUS</option>
+                <option value="CAR">CAR</option>
+                <option value="MOTORCYCLE">MOTORCYCLE</option>
+                <option value="AUTO">AUTO</option>
+                <option value="TRUCK">TRUCK</option>
+            </select>
+
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+
+
+<div [hidden]="!submitted">
+    <h4>You submitted successfully!</h4>
+    <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+</div>

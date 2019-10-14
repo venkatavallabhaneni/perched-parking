@@ -1,0 +1,32 @@
+<div class="panel panel-primary"></div>
+<div class="panel-heading">
+    <h2>Parking Lots </h2>
+</div>
+<div class="panel-body">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Parking Lot Id</th>
+                <th>Lot Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+
+            <tr *ngFor="let parkingLot of parkingLots">
+                <td>{{parkingLot.id}}</td>
+                <td>{{parkingLot.name}}</td>
+
+
+                <td><button (click)="addSpots(parkingLot.id )" class="btn btn-success">Add Parking Spots</button>
+
+                </td>
+
+
+            </tr>
+        </tbody>
+    </table>
+</div>
