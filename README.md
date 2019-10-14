@@ -39,7 +39,7 @@ Can run the tests from IDE or using Jenkins pipeline, have Unit test as well as 
 
 ## User interface
 
-![picture](spotbooking.png)
+![picture](/spotbooking.PNG)
 ## Authors
 
 Venkat Vallabhaneni
